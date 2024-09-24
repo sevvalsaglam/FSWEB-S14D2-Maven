@@ -11,13 +11,18 @@ public class Wall {
     }
 
     public String getDirection() {
-        return this.direction;
+        return direction;
     }
 
     public void create(){
         System.out.println("Wall has been built.");
     }
 
-
+    @Override
+    public String toString() {
+        return "Wall{" +
+                "direction='" + direction + '\'' +
+                '}';
+    }
 }
 

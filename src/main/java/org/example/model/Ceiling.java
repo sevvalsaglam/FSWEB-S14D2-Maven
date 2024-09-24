@@ -12,13 +12,21 @@ public class Ceiling {
     }
 
     public int getHeight() {
-        return this.height;
+        return height;
     }
 
     public PaintColor getColor() {
-        return this.color;
+        return color;
     }
     public void create(){
         System.out.println("Ceiling has been built.");
+    }
+
+    @Override
+    public String toString() {
+        return "Ceiling{" +
+                "height=" + height +
+                ", color=" + color +
+                '}';
     }
 }

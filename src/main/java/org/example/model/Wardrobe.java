@@ -5,25 +5,33 @@ public class Wardrobe {
    private int height;
    private double weight;
 
-    public Wardrobe(int width, int height, int weight) {
+    public Wardrobe(int width, int height, double weight) {
         this.width = width;
         this.height=height;
         this.weight=weight;
     }
 
     public int getWidth() {
-        return this.width;
+        return width;
     }
 
     public int getHeight() {
-        return this.height;
+        return height;
     }
 
     public double getWeight() {
-        return this.weight;
+        return weight;
     }
     public void add (){
         System.out.println("Wardrobe added into Bedroom.");
     }
 
+    @Override
+    public String toString() {
+        return "Wardrobe{" +
+                "width=" + width +
+                ", height=" + height +
+                ", weight=" + weight +
+                '}';
+    }
 }

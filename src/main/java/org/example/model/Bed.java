@@ -15,6 +15,9 @@ public class Bed {
         this.sheets=sheets;
         this.quilts=quilts;
     }
+
+
+
     public void make (){
         System.out.println("The bed is being made.");
     }
@@ -24,19 +27,29 @@ public class Bed {
     }
 
     public int getPillows() {
-        return this.pillows;
+        return pillows;
     }
 
     public int getHeight() {
-        return this.height;
+        return height;
     }
 
     public int getSheets() {
-        return this.sheets;
+        return sheets;
     }
 
     public int getQuilts() {
-        return this.quilts;
+        return quilts;
     }
 
+    @Override
+    public String toString() {
+        return "Bed{" +
+                "style='" + style + '\'' +
+                ", pillows=" + pillows +
+                ", height=" + height +
+                ", sheets=" + sheets +
+                ", quilts=" + quilts +
+                '}';
+    }
 }

@@ -14,15 +14,24 @@ public class Carpet {
     }
 
     public int getWidth() {
-        return this.width;
+        return width;
     }
     public int getHeight() {
-        return this.height;
+        return height;
     }
     public PaintColor getColor() {
-        return this.color;
+        return color;
     }
     public void lying(){
         System.out.println("Carpet is lying on Bedroom floor.");
+    }
+
+    @Override
+    public String toString() {
+        return "Carpet{" +
+                "width=" + width +
+                ", height=" + height +
+                ", color=" + color +
+                '}';
     }
 }

@@ -18,14 +18,24 @@ public class Lamp {
     }
 
     public LampType getStyle() {
-        return this.style;
+        return style;
     }
 
     public boolean isBattery (){
-        return this.battery;
+        return battery;
     }
 
     public int getGlobRating() {
         return globRating;
+    }
+
+
+    @Override
+    public String toString() {
+        return "Lamp{" +
+                "style=" + style +
+                ", battery=" + battery +
+                ", globRating=" + globRating +
+                '}';
     }
 }
