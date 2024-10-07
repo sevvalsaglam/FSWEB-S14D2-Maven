@@ -2,6 +2,8 @@ package org.example.model;
 
 import org.example.model.enums.PaintColor;
 
+import java.util.Objects;
+
 public class Wall {
     private String direction;
 
@@ -24,5 +26,7 @@ public class Wall {
                 "direction='" + direction + '\'' +
                 '}';
     }
+
+
 }
 

@@ -1,5 +1,7 @@
 package org.example.model;
 
+import java.util.Objects;
+
 public class Bedroom extends Room{
     private String name;
     private Bed bed;
@@ -30,15 +32,6 @@ public class Bedroom extends Room{
     }
 
 
-    @Override
-    public String toString() {
-        return "Bedroom{" +
-                "name='" + name + '\'' +
-                ", bed=" + bed +
-                ", wardrobe=" + wardrobe +
-                ",Room="+ super.toString()+
-                '}';
-    }
     public void createBedroom(){
         getWall1().create();
         getWall2().create();
@@ -51,4 +44,11 @@ public class Bedroom extends Room{
 
 
     }
+
+    @Override
+    public String toString() {
+        return super.toString();
+    }
+
+
 }
